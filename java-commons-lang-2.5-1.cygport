@@ -1,0 +1,10 @@
+inherit ant
+
+DESCRIPTION="Java core class manipulation library"
+HOMEPAGE="http://commons.apache.org/lang/"
+SRC_URI="mirror://apache/${ORIG_PN//-//}/source/${P#java-}-src.tar.gz"
+SRC_DIR=${P#java-}-src
+
+ANT_BUILD_TARGETS="jar javadoc"
+ANT_INSTALL_JARS="target/*.jar"
+ANT_INSTALL_JAVADOC="target/apidocs"
